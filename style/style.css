@@ -29,4 +29,94 @@ body {
   background-image: url("../Images/background.png");
   background-size: cover;
   background-attachment: fixed;
+  /* لون أبيض مع شفافية */
+}
+
+/* --- Header --- */
+/* Nav Bar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  padding: 20px 0;
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/* List */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 45px;
+}
+/* Images */
+nav .logo-nav {
+  width: 55px;
+  height: 45px;
+}
+nav .icon-pages {
+  width: 30px;
+  height: 32px;
+}
+/* Nav Links */
+nav a {
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: underline #40457d;
+    background-color: #777a99;
+    padding: 4px 10px;
+    border-radius: 5px;
+  }
+}
+
+/* --- Main --- */
+
+/* Welcome Section */
+main section:nth-child(1) {
+  text-align: center;
+}
+
+/* Image demo */
+.image-demo {
+  width: 1027px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 50px 0;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+
+/* Heading 1 */
+h1 {
+  font-size: 50px;
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
+h1 span {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Paragraph - Section 1 */
+.quot {
+  display: inline;
+  font-size: 30px;
+  color: var(--text-color);
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  font-weight: 600;
 }
