@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+h2 {
+  color: var(--secondary-color);
+}
