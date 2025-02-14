@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 ::selection {
   background-color: #40457d;
   color: #f5efe7;
@@ -26,7 +30,91 @@
 /* ? --- Body --- */
 body {
   font-family: Bahji, Arial, Helvetica, sans-serif;
-  background-image: url("../Images/background.png");
+  background-image: url("../Images/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+
+/* start how we help section */
+.how-we-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.name-team {
+  color: #40457d;
+  font-size: 20px;
+}
+
+.hr-how-we-help {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.cards-how-we-help {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 50px;
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+.icon-card {
+  width: 70px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 5px;
+  border-radius: 10px;
+  width: 370px;
+  height: 290px;
+  padding: 0 10px;
+  box-shadow: 1px 1px 20px 0.01px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: zoomIn 0.8s ease-out forwards;
+}
+
+.card-title {
+  font-size: x-large;
+}
+.card-text {
+  color: var(--text-color);
+  font-size: large;
+}
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#card-top {
+  align-self: start;
+}
+
+/* end how we help section */
