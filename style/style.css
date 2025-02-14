@@ -2,6 +2,7 @@
   --primary-color: #40457d;
   --secondary-color: #777a99;
   --tertiary-color: #f5efe7;
+  --text-color: #231f20;
 }
 
 * {
@@ -28,11 +29,4 @@ body {
   background-image: url("../Images/background.png");
   background-size: cover;
   background-attachment: fixed;
-}
-
-h1 {
-  color: var(--primary-color);
-}
-h2 {
-  color: var(--secondary-color);
 }
