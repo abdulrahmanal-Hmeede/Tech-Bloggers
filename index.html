@@ -11,50 +11,47 @@
     />
     <meta name="author" content="Tech Bloggers Team" />
     <!-- Style Sheet and Icon -->
-    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="/Style/style.css" />
     <link rel="icon" href="Images/logo_tb.png" />
     <title>Tach Bloggers</title>
   </head>
   <body dir="rtl">
     <header>
-      <!-- nav bar -->
+      <!-- --- Nav Bar --- -->
+      <nav>
+        <ul>
+          <li>
+            <img
+              class="logo-nav"
+              src="Images/logo_tb.png"
+              alt="Logo of Tech Bloggers"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-pages"
+              src="Images/pages.png"
+              alt="Icon of pages"
+            />
+          </li>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">الهدف</a></li>
+          <li><a href="#">الخدمات</a></li>
+          <li><a href="#">كيف نساعدك</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <!-- --- Welcome Section --- -->
       <section>
-        <!-- ترحيب -->
+        <h1>مرحبا بكم في مجتمعنا - <span>Tech Bloggers</span></h1>
+        <p class="quot">
+          هنا حيث نجمع، نلخص ونصور كل ما هو مهم لرحلتنا الأكاديمية
+        </p>
       </section>
       <section>
         <!-- الهدف -->
-        <h3 class="section_title">الهدف</h3>
-        <h3 class="section_word">الذي يسعى الفريق لتحقيقه</h3>
-        <div class="section_line"><hr id="hr1"></div>
-        
-        <div class="goal_content">
-
-          <div class="goal_photo">
-            <img src="Images/goal.png" alt="photo" width="550" height="547" id="goal_image_id">
-          </div>
-
-          <div class="goal_text">
-            <div class="goal_text_id">
-              <p id="p1">نحن فريق Tech Bloggers ونعمل بجد لجمع المقررات وتلخيصها بشكل مميز وفعّال.
-             نسعى لتقديم محتوى تعليمي مُبسّط 
-            وموجز يساعد في تسهيل عملية التعلم واستيعاب المعلومات. من خلال جهودنا،
-             نهدف إلى توفير ملخصات شاملة تسهم في تحقيق أفضل نتائج أكاديمية ممكنة للطلاب.
-            </p>
-            </div>
-            
-            <div class="goal_text_id_2">
-              <p id="p2">
-              نكرس وقتنا لتسجيل هذه الملخصات لتكون متاحة بسهولة للطلاب،
-               مما يعزز من فرصهم في النجاح الأكاديمي والتفوق في دراستهم الجامعية. نحن ملتزمون بتقديم مواد
-               تعليمية تلبي احتياجات الطلاب وتساعدهم على التفوق في دراستهم. طموحنا هو أن نصبح مرجعاً 
-              رئيسياً لكل طالب يسعى للحصول على معلومات دقيقة وملخصات شاملة لمقرراته الجامعية.  
-            </p>
-          </div>
-          </div>
-          
-        </div>
+        <!--  -->
       </section>
       <section>
         <!-- الخدمات -->
@@ -116,13 +113,100 @@
          </div>
          </div>
       </section>
-      <section>
-        <!-- كيف نساعدك -->
+
+      <!-- section how we help  -->
+      <section class="how-we-help">
+        <h5 class="name-team">Tach Bloggers</h5>
+        <h2 class="h2-how-we-help">كيف نساعدك؟</h2>
+        <div class="hr-how-we-help"></div>
+        <div class="cards-how-we-help">
+          <div class="card">
+            <div class="icon">
+              <img class="icon-card" src="images/video.png" alt="icon-book" />
+            </div>
+            <h3 class="card-title">تسجيل المحاضرات</h3>
+            <p class="card-text">
+              نسجّل المحاضرات المهمة بدقة، حتى تتمكن من مراجعتها متى شئت، سواء
+              كنت غائبًا أو تحتاج لإعادة الفهم.
+            </p>
+          </div>
+          <div class="card" id="card-top">
+            <div class="icon">
+              <img class="icon-card" src="images/book.png" alt="icon-book" />
+            </div>
+            <h3 class="card-title">ملخصات ومقررات جاهزة</h3>
+            <p class="card-text">
+              نوفر لك ملخصات دقيقة وشاملة للمحاضرات والمقررات، تساعدك على
+              الدراسة بفعالية وتوفير الوقت.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img class="icon-card" src="images/folder.png" alt="icon-book" />
+            </div>
+            <h3 class="card-title">تنظيم المواد وسهولة الوصول</h3>
+            <p class="card-text">
+              نجمع لك كل المحتوى الدراسي في مكان واحد، بطريقة مرتبة وواضحة، حتى
+              تجد ما تحتاجه بسهولة ودون عناء.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <!-- روابط الفريق  -->
-      <!-- Copy Right -->
+      <div class="content-footer">
+        <div class="team-info">
+          <div class="logo-footer">
+            <img class="logo-footer-img" src="images/full_logo.png" alt="" />
+          </div>
+          <div class="text-footer">
+            نحن هنا لنقدم للشباب المستقلين في سوريا فرصة للنمو والتطور عبر تجربة
+            تعليمية مميزة ومحفزة. نؤمن بقوة بقدرتكم على تحقيق التفوق وتحويل
+            الصعاب إلى فرص
+          </div>
+          <div class="icons-footer">
+            <a href="https://t.me/tech_blogeers"
+              ><img class="icon-footer" src="images/telegram.png" alt=""
+            /></a>
+            <a
+              href="https://drive.google.com/drive/u/6/folders/1ttp4k-TGG_HiOBzqe9B-cycVge89pKha"
+              ><img class="icon-footer" src="images/drive.png" alt=""
+            /></a>
+            <a href=""
+              ><img class="icon-footer" src="images/facebook.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="pages-footer">
+          <h4>أبرز الصفحات</h4>
+          <ul>
+            <li><a href="">صفحة الملخصات</a></li>
+            <li><a href="">صفحة الفيديوهات</a></li>
+            <li><a href="">صفحة الأعضاء</a></li>
+          </ul>
+        </div>
+        <div class="links-footer">
+          <h4>الروابط الأكثر طلبا</h4>
+          <ul>
+            <li>
+              <a target="_blank" href="https://t.me/informaticsEng"
+                >رابط قناة لإفادة الزملاء</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/tech_blogeers"
+                >رابط قناة الفريق التلجرام</a
+              >
+            </li>
+            <li><a target="_blank " href="">رابط مقررات الجامعة</a></li>
+            <li><a target="_blank" href="">رابط صفحة الجامعة</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="hr-footer" />
+      <div class="copy">
+        <p>جميع الحقوق محفوظة &copy; Tach Bloggers</p>
+      </div>
     </footer>
   </body>
 </html>

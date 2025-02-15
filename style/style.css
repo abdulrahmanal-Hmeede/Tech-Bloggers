@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 50px;
+}
+
+section {
+  margin: 30px 0;
+}
+
 ::selection {
   background-color: #40457d;
   color: #f5efe7;
@@ -26,8 +34,255 @@
 /* ? --- Body --- */
 body {
   font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
   background-size: cover;
   background-attachment: fixed;
+  /* لون أبيض مع شفافية */
+}
+
+/* --- Header --- */
+/* Nav Bar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  padding: 20px 0;
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/* List */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 45px;
+}
+/* Images */
+nav .logo-nav {
+  width: 55px;
+  height: 45px;
+}
+nav .icon-pages {
+  width: 30px;
+  height: 32px;
+}
+/* Nav Links */
+nav a {
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: underline #40457d;
+    background-color: #777a99;
+    padding: 4px 10px;
+    border-radius: 5px;
+  }
+}
+
+/* --- Main --- */
+
+/* Welcome Section */
+main section:nth-child(1) {
+  text-align: center;
+}
+
+/* Heading 1 */
+h1 {
+  font-size: 50px;
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
+h1 span {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Paragraph - Section 1 */
+.quot {
+  display: inline;
+  font-size: 30px;
+  color: var(--text-color);
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  font-weight: 600;
+}
+
+/* start how we help section */
+.how-we-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.name-team {
+  color: #40457d;
+  font-size: 20px;
+}
+
+.hr-how-we-help {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.cards-how-we-help {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 50px;
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+.icon-card {
+  width: 70px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 5px;
+  border-radius: 10px;
+  width: 370px;
+  height: 290px;
+  padding: 0 10px;
+  box-shadow: 1px 1px 20px 0.01px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.1s ease-in-out;
+  animation: zoomIn 0.8s ease-out forwards;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #eaebf0;
+  scale: 1.05;
+}
+
+.card-title {
+  font-size: x-large;
+}
+.card-text {
+  color: var(--text-color);
+  font-size: large;
+}
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#card-top {
+  align-self: start;
+}
+
+/* end how we help section */
+
+/* start footer section */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #40457d;
+  align-items: center;
+}
+
+.hr-footer {
+  width: 80%;
+}
+.copy {
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.logo-footer {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.logo-footer-img {
+  width: 90px;
+}
+
+.text-footer {
+  color: var(--text-color);
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.content-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-footer {
+  width: 40px;
+  background-color: #eaebf0;
+  border-radius: 5px;
+  color: #40457d;
+}
+
+.icons-footer {
+  display: flex;
+  gap: 60px;
+}
+
+li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    color: var(--secondary-color);
+  }
 }
 
 
