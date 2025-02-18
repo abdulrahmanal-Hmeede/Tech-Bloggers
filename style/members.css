@@ -1,0 +1,190 @@
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section 1 */
+.section-1 {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 .why-h3 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.section-1 h2 {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section-1 .hr-s1 {
+  width: 128px;
+  height: 4px;
+  background-color: var(--text-color);
+  margin: 14px 0 38px;
+  border: none;
+  border-radius: 10px;
+}
+
+.section-1 p {
+  color: var(--text-color);
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Section 2 */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  margin: 40px 0;
+}
+
+.section-2 .mebs-h3 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.section-2 h2 {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section-2 .hr-s2 {
+  width: 128px;
+  height: 4px;
+  background-color: var(--text-color);
+  margin: 14px 0 38px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Cards member */
+.cards-mebs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.con-card {
+  position: relative;
+}
+
+.con-card .card-num {
+  color: var(--primary-color);
+  font-size: 80px;
+  font-weight: 900;
+  position: absolute;
+  top: -30px;
+  right: -22px;
+  /* z-index: 1000; */
+}
+
+.card-meb {
+  width: 280px;
+  height: 230px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card-hd {
+  background-color: var(--tertiary-color);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.card-hd h3 {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.card-mn {
+  width: 100%;
+  height: 170px;
+  background-color: var(--primary-color);
+  padding-right: 10px;
+  border-radius: 12px 12px 7px 7px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.card-mn p {
+  color: var(--tertiary-color);
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.card-meb .card-hr {
+  width: 30%;
+  height: 2px;
+  background-color: var(--tertiary-color);
+  border: none;
+  margin-top: 10px;
+}
+
+.card-mn .p-connect {
+  color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+}
+
+.p-connect a img {
+  &:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
