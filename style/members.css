@@ -1,0 +1,510 @@
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section 1 */
+.section-1 {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 .why-h3 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.section-1 h2 {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section-1 .hr-s1 {
+  width: 128px;
+  height: 4px;
+  background-color: var(--text-color);
+  margin: 14px 0 38px;
+  border: none;
+  border-radius: 10px;
+}
+
+.con-who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-who img {
+  display: none;
+  transform: scale(1.1);
+}
+
+.section-1 p {
+  color: var(--text-color);
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Responsive on Desktop */
+@media screen and (min-width: 1340px) {
+  .con-who {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  .con-who p {
+    width: 550px;
+    text-align: start;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .con-who img {
+    display: block;
+    &:hover {
+      transform: scale(1.18);
+      transition: 0.3s;
+    }
+  }
+}
+
+/* Section 2 */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  margin: 40px 0;
+}
+
+.section-2 .mebs-h3 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.section-2 h2 {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section-2 .hr-s2 {
+  width: 128px;
+  height: 4px;
+  background-color: var(--text-color);
+  margin: 14px 0 38px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Cards member */
+.cards-mebs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+}
+
+.con-card {
+  position: relative;
+}
+
+.con-card .card-num {
+  color: var(--primary-color);
+  font-size: 80px;
+  font-weight: 900;
+  position: absolute;
+  top: -30px;
+  right: -22px;
+  /* z-index: 1000; */
+}
+
+.card-meb {
+  width: 280px;
+  height: 230px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card-hd {
+  background-color: var(--tertiary-color);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.card-hd h3 {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.card-mn {
+  width: 100%;
+  height: 170px;
+  background-color: var(--primary-color);
+  padding-right: 10px;
+  border-radius: 12px 12px 7px 7px;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-mn p {
+  color: var(--tertiary-color);
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.card-meb .card-hr {
+  width: 30%;
+  height: 2px;
+  background-color: var(--tertiary-color);
+  border: none;
+  margin-top: 10px;
+}
+
+.card-mn .p-connect {
+  color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+}
+
+.p-connect a img {
+  &:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+/* Container Shapes */
+.shapes {
+  display: none;
+}
+
+/* Shape 1 */
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--primary-color);
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  position: absolute;
+  bottom: 40px;
+  left: 500px;
+}
+
+/* Shape 2 */
+.shape-2 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--secondary-color);
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  position: absolute;
+  bottom: 40px;
+  left: 250px;
+}
+
+/* Shape 3 */
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--text-color);
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+/* Responsive on Desktop */
+@media screen and (min-width: 1340px) {
+  .cards-mebs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 140px;
+  }
+  .shapes {
+    display: block;
+  }
+}
+
+/* --- Section 3 --- */
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  margin: 40px 0;
+}
+
+.section-3 .hon-h3 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.section-3 h2 {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section-3 .hr-s3 {
+  width: 128px;
+  height: 4px;
+  background-color: var(--text-color);
+  margin: 14px 0 38px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Container honors */
+.con-hons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card honor 1 */
+.con-hon {
+  width: 320px;
+  height: 340px;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Con of imgs */
+.hon-imgs-1 {
+  position: relative;
+  left: 70px;
+}
+
+/* img 1 */
+.hon-imgs-1 .hon-img-1 {
+  width: 140px;
+  height: 140px;
+  clip-path: polygon(44% 18%, 100% 18%, 100% 84%, 0 84%, 0 0, 27% 0);
+  border: 2px solid var(--text-color);
+  cursor: zoom-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:hover {
+    clip-path: polygon(44% 0, 100% 0, 100% 84%, 0 84%, 0 0, 27% 0);
+    transform: scale(1.3);
+    transition: 0.3s;
+    z-index: 1000;
+  }
+}
+
+/* img 2 */
+.hon-imgs-1 .hon-img-2 {
+  width: 140px;
+  height: 140px;
+  clip-path: polygon(44% 18%, 100% 18%, 100% 84%, 0 84%, 0 0, 27% 0);
+  cursor: zoom-in;
+  border: 2px solid var(--text-color);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  &:hover {
+    clip-path: polygon(44% 0, 100% 0, 100% 84%, 0 84%, 0 0, 27% 0);
+    transform: scale(1.3);
+    transition: 0.3s;
+    z-index: 1000;
+  }
+}
+
+/* img 3 */
+.hon-imgs-1 .hon-img-3 {
+  width: 140px;
+  height: 150px;
+  clip-path: polygon(44% 18%, 100% 18%, 100% 84%, 0 84%, 0 0, 27% 0);
+  cursor: zoom-in;
+  border: 2px solid var(--text-color);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  &:hover {
+    clip-path: polygon(44% 0, 100% 0, 100% 84%, 0 84%, 0 0, 27% 0);
+    transform: scale(1.3);
+    transition: 0.3s;
+    z-index: 1000;
+  }
+}
+
+.con-hon .hon1-p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  left: 6px;
+}
+
+/* Card honor 2 */
+
+.con-hon-2 {
+  width: 320px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hon-imgs-2 .hon-img-java {
+  width: 190px;
+  height: 120px;
+  border: 2px solid var(--text-color);
+}
+
+.con-hon-2 p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.con-hon-2 button {
+  width: 120px;
+  height: 40px;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  &:hover {
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--text-color);
+    transition: 0.3s;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.con-hon-2 button a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+/* Responsive on Desktop */
+@media screen and (min-width: 1340px) {
+  .con-hons {
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 200px;
+  }
+}

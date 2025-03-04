@@ -1,0 +1,288 @@
+:root {
+    --primary-color: #40457d;
+    --secondary-color: #777a99;
+    --tertiary-color: #f5efe7;
+    --text-color: #231f20;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-size: 50px;
+  }
+  
+  section {
+    margin: 30px 0;
+  }
+  
+  ::selection {
+    background-color: #40457d;
+    color: #f5efe7;
+  }
+  
+  /* ? --- Font --- */
+  @font-face {
+    font-family: Bahji;
+    src: url("../Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+      format("truetype");
+  }
+  
+  /* ? --- Body --- */
+  body {
+    font-family: Bahji, Arial, Helvetica, sans-serif;
+    background-image: url("../Images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /* لون أبيض مع شفافية */
+  }
+
+
+  /* section(1) title */
+.title_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.section_suggetions_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin-top:130px;
+    color: var(--secondary-color);
+  }
+
+  .section_suggetions_word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--text-color);
+    font-weight: 400px;
+  }
+
+.section_suggetions_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 99px;
+    margin-top: 9px;
+}
+
+.description_suggestions{
+    display: flex;
+    gap: 300px;
+    height: 88px;
+    margin: 16px 16px;
+    padding: 0px 60px 0px 60px;
+  }
+
+#text_suggestions{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 0px 60px;
+    margin-top: 16px;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+
+/* section(2) forms */
+.section_forms{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.forms_div{
+    border: solid var(--primary-color);
+    box-shadow: 0px 0px 25px #D2D5D57A;
+    border-radius: 20px;
+    width: 45%;
+    height: 750px;
+}
+
+.form_text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+  }
+
+#fname, #lname, #email{
+    width: 300px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: white;
+    border: solid var(--text-color) 1px;
+}
+
+#fname_lable,#lname_lable,#email_lable{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#h3_textarea,#h3_student_information{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 25px;
+  color:var(--tertiary-color);
+  margin:20px 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.forms_textarea_box{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+border:0px;
+}
+
+#textarea_id{
+border-radius: 20px;
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 50px 20px;
+}
+
+#button{
+    height: 55px;
+    width: 45%;
+    border-radius: 20px;
+    border: 0px;
+    color:var(--tertiary-color);
+    background-color: var(--primary-color);
+    font-size: 25px;
+}
+
+#button:hover {
+    background-color: var(--text-color);
+    cursor: pointer;
+    scale: 1.05;
+  }
+
+  #section_suggetions_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .suggestions_card_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 90%;
+    height: 800px;
+    flex-wrap: wrap;
+  }
+
+
+  .container_content_suggestion_card{
+    width: 270px;
+    height: 300px;
+    margin:10px 30px;
+    border-radius: 30px ;
+  }
+
+.header_card{
+  width: 100%;
+  height: 70%;
+  border-radius: 30px 30px 0px 0px;
+  border:solid var(--primary-color);
+}
+
+.footer_card{
+  width: 100%;
+  height: 30%;
+  background-color:var(--primary-color);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.header_card_text{
+    text-align: center;
+    font-size: 19px;
+    color: var(--text-color);
+    padding:30px 20px 20px 20px;
+}
+
+.footer_card_text{
+  text-align: center;
+  font-size: 22px;
+  padding:5px 30px;
+  color: var(--tertiary-color);
+}
+
+.footer_card_text_under_name{
+  text-align: center;
+  font-size: 12px;
+  color: var(--tertiary-color);
+  padding: 0px 5px 15px 5px;
+}
+
+.container_content_suggestion_card:hover {
+  background-color: var(--secondary-color);
+  scale: 1.05;
+}
+
+
+/* Responsive for phone */
+@media (max-width:400px){
+  .forms_div{
+    width: 100%;
+    margin: 30px 30px 30px 20px;
+  }
+  .description_suggestions{
+    width: 100%;
+    padding: 0px;
+  }
+
+  #text_suggestions{
+    padding: 0px;
+  }
+  .section_forms , .forms_div{
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #h3_student_information , #h3_textarea{
+    font-size: 25px;
+  }
+
+  #textarea_id{
+    margin: 0px 30px 0px 30px;
+  }
+
+  .button_div{
+    margin-top: 35px;
+    padding: 0px;
+  }
+}
