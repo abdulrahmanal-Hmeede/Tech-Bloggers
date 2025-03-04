@@ -292,15 +292,15 @@ li > a {
 
 /*section 2*/
 
-.section_title{
+.section_title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
-  margin-top:130px;
+  margin-top: 130px;
   color: var(--secondary-color);
 }
-.section_word{
+.section_word {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,36 +309,34 @@ li > a {
   font-weight: 400px;
 }
 
-.section_line{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#hr1{
-    width: 130px;
-    height: 4px;
-    background-color: var(--text-color);
-    border-radius: 99px;
-    margin-top: 9px;
+#hr1 {
+  width: 130px;
+  height: 4px;
+  background-color: var(--text-color);
+  border-radius: 99px;
+  margin-top: 9px;
 }
 
-
-.goal_content{
+.goal_content {
   display: flex;
   align-items: center;
   text-align: center;
 
   /* gap: 50px; */
   /* height: 400px; */
-  
 }
 
-.goal_photo{
+.goal_photo {
   width: 50%;
   padding-top: 70px;
 }
 
-.goal_text{
+.goal_text {
   /* display: flex; */
   padding: 10px 0px 0px 12px;
   margin-left: 70px;
@@ -349,7 +347,7 @@ li > a {
   text-align: right;
 }
 
-.title_goal_div{
+.title_goal_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,12 +356,9 @@ li > a {
   text-align: center;
 }
 
-
-
-
 /*section 3*/
 
-.section_services{
+.section_services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -371,10 +366,9 @@ li > a {
   /* height: 809px; */
   height: 100%;
   /* margin: 50px; */
-
 }
 
-.title_service_div{
+.title_service_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,14 +377,14 @@ li > a {
   text-align: center;
 }
 
-.section_title2{
+.section_title2 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
   color: var(--secondary-color);
 }
-.section_word2{
+.section_word2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,22 +393,21 @@ li > a {
   font-weight: 400px;
 }
 
-.section_line2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section_line2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#hr2{
-    width: 130px;
-    height: 4px;
-    background-color: var(--text-color);
-    border-radius: 99px;
-    margin-top: 9px;
+#hr2 {
+  width: 130px;
+  height: 4px;
+  background-color: var(--text-color);
+  border-radius: 99px;
+  margin-top: 9px;
 }
 
-.description_service{
+.description_service {
   display: flex;
   gap: 300px;
   height: 88px;
@@ -422,30 +415,28 @@ li > a {
   /* padding: 0px 60px 0px 60px; */
 }
 
-#text_service{
-   font-weight: 400;
-    font-size: 20px;
-    color: var(--text-color);
-    padding: 0px 60px 0px 60px;
-    margin-top: 16px;
-    text-align: center;
-    line-height: 44px;
-    /* margin-bottom: 16px; */
+#text_service {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 0px 60px 0px 60px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 44px;
+  /* margin-bottom: 16px; */
 }
 
-.content_service{
+.content_service {
   display: flex;
   gap: 50px;
   height: 100%;
-
 }
 
-.iamge_service{
-
+.iamge_service {
   width: 50%;
 }
 
-.cards_div{
+.cards_div {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -455,14 +446,14 @@ li > a {
   padding: 0px 12px 0px 12px;
 }
 
-.cards{
-      display: flex;
-      align-items: center;
-      box-shadow: 0px 0px 12px #D2D5D57A;
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 16px;
-      width: 100%;
+.cards {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 12px #d2d5d57a;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+  width: 100%;
 }
 
 .cards:hover {
@@ -470,62 +461,61 @@ li > a {
   scale: 1.05;
 }
 
-.iconss{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--tertiary-color);
-    padding: 12px;
-    border-radius: 16px;
-    width: 112px;
-    height: 85px;
-
-}
-
-.textt{
-   font-size: 20px;
-    color: var(--text-color);
-    font-weight: 500px;
-    margin-right: 20px;
-    text-align: right;
-}
-
-@media (max-width :400px){
-  .goal_photo{
-  display: none;
-}
-
-.goal_text{
+.iconss {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 100%;
-  margin: 0px;
-  padding: 0%;
+  background-color: var(--tertiary-color);
+  padding: 12px;
+  border-radius: 16px;
+  width: 112px;
+  height: 85px;
 }
 
-.iamge_service{
-  display: none;
+.textt {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 500px;
+  margin-right: 20px;
+  text-align: right;
 }
 
-.description_service{
-  display: flex;
-  padding: 0%;
+@media (max-width: 768px) {
+  .goal_photo {
+    display: none;
   }
 
-#text_service{
+  .goal_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+  }
+
+  .iamge_service {
+    display: none;
+  }
+
+  .description_service {
+    display: flex;
+    padding: 0%;
+  }
+
+  #text_service {
     font-size: 20px;
     color: var(--text-color);
     text-align: center;
-    padding: 0%
-}
-.cards_div{
-  width: 100%;
-}
-.content_service{
-  margin-top: 90px;
-}
+    padding: 0%;
+  }
+  .cards_div {
+    width: 100%;
+  }
+  .content_service {
+    margin-top: 90px;
+  }
 }
 
 /* Start media query */
