@@ -41,17 +41,22 @@ body {
 }
 
 /* --- Header --- */
-/* Nav Bar */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
+/* Nav Bar */
 nav {
-  padding: 20px 0;
+  padding: 10px 30px;
   background-color: var(--tertiary-color);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 /* List */
 nav ul {
   display: flex;
@@ -62,27 +67,23 @@ nav ul {
 nav ul li {
   margin-right: 45px;
 }
+
 /* Images */
 nav .logo-nav {
   width: 55px;
   height: 45px;
 }
-nav .icon-pages {
-  width: 30px;
-  height: 32px;
-}
+
 /* Nav Links */
-nav a {
+nav li a {
   color: var(--text-color);
   font-weight: 700;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s;
   &:hover {
-    text-decoration: underline #40457d;
-    background-color: #777a99;
-    padding: 4px 10px;
-    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 6px;
   }
 }
 
@@ -215,6 +216,7 @@ footer {
   flex-direction: column;
   background-color: #40457d;
   align-items: center;
+  color: white;
 }
 
 .hr-footer {
@@ -223,7 +225,7 @@ footer {
 }
 .copy {
   padding: 20px;
-  color: var(--text-color);
+  color: white;
 }
 
 .logo-footer {
@@ -237,7 +239,7 @@ footer {
 }
 
 .text-footer {
-  color: var(--text-color);
+  color: white;
 }
 
 .team-info {
@@ -281,7 +283,7 @@ ul {
 
 li > a {
   text-decoration: none;
-  color: black;
+  color: var(--tertiary-color);
   transition: all 0.1s ease-in-out;
   &:hover {
     color: var(--secondary-color);

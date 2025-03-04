@@ -1,0 +1,188 @@
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 88%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px 0px var(--text-color);
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+span {
+  font-size: 25px;
+  color: var(--tertiary-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: var(--tertiary-color);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#gradesList p,
+h3 {
+  color: var(--tertiary-color);
+}
+
+/* start footer section */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #40457d;
+  align-items: center;
+  color: white;
+}
+
+.hr-footer {
+  margin-top: 30px;
+  width: 80%;
+}
+.copy {
+  padding: 20px;
+  color: white;
+}
+
+.logo-footer {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.logo-footer-img {
+  width: 90px;
+}
+
+.text-footer {
+  color: white;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.content-footer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.icon-footer {
+  width: 40px;
+  background-color: #eaebf0;
+  border-radius: 5px;
+  color: #40457d;
+}
+
+.icons-footer {
+  display: flex;
+  gap: 60px;
+}
+
+li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li > a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+/* end footer section */
