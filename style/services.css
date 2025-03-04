@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr-services {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.cards-services {
+  display: grid;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.card-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  background: rgb(126, 129, 173);
+  background: linear-gradient(
+    0deg,
+    rgb(222, 222, 230) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.img-card-services {
+  width: 150px;
+  height: 150px;
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.btn-card-services {
+  width: 100px;
+  background-color: #40457d;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: #40457d solid 1px;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: white;
+    color: #40457d;
+    border: #40457d solid 1px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.context-card {
+  margin-top: 15px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.amale {
+  margin-top: 5px;
+}
+.dashed-line {
+  width: 210px;
+  height: 40px;
+  border: 3px dashed var(--primary-color);
+  border-radius: 50px;
+  /* transform: rotate(-15deg); */
+}
+
+.title {
+  margin-top: 150px;
+  position: absolute;
+}
+
+@media (min-width: 480px) {
+  .cards-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

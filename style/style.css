@@ -139,9 +139,9 @@ h1 span {
 }
 
 .cards-how-we-help {
-  height: 350px;
+  /* height: 350px; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: end;
   gap: 50px;
   padding: 10px 0;
@@ -218,6 +218,7 @@ footer {
 }
 
 .hr-footer {
+  margin-top: 30px;
   width: 80%;
 }
 .copy {
@@ -242,7 +243,7 @@ footer {
 .team-info {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 20px;
   width: 300px;
   padding: 10px;
@@ -251,8 +252,10 @@ footer {
 .content-footer {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 50px;
 }
 
 .icon-footer {
@@ -493,3 +496,20 @@ li > a {
   font-weight: 500px;
   margin-right: 20px;
 }
+
+/* Start media query */
+
+@media (min-width: 768px) {
+  .content-footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+  }
+
+  .cards-how-we-help {
+    height: 350px;
+    flex-direction: row;
+  }
+}
+
+/* End media query */
