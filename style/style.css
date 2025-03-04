@@ -27,7 +27,7 @@ section {
 /* ? --- Font --- */
 @font-face {
   font-family: Bahji;
-  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+  src: url("../Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
     format("truetype");
 }
 
@@ -290,12 +290,19 @@ li > a {
 
 /* end footer section */
 
+<<<<<<< HEAD
+/* "section Goals" */
+
+.section_title{
+=======
 /*section 2*/
 .section_title {
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
+  margin-top:130px;
   color: var(--secondary-color);
 }
 .section_word {
@@ -320,6 +327,28 @@ li > a {
   margin-top: 9px;
 }
 
+<<<<<<< HEAD
+
+.goal_content{
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* gap: 50px; */
+  /* height: 400px; */
+  
+}
+
+.goal_photo{
+  width: 50%;
+  padding-top: 70px;
+}
+
+.goal_text{
+  /* display: flex; */
+  padding: 10px 0px 0px 12px;
+  margin-left: 70px;
+=======
 .goal_content {
   display: flex;
   flex-direction: row;
@@ -328,11 +357,45 @@ li > a {
 .goal_text {
   display: block;
   padding: 60px 12px 0px 12px;
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
   color: var(--text-color);
   font-size: 28px;
   line-height: 60px;
+  width: 50%;
+  text-align: right;
 }
 
+<<<<<<< HEAD
+.title_goal_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+ 
+
+/* "Section Service" */
+.section_services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* height: 809px; */
+  height: 100%;
+  /* margin: 50px; */
+
+}
+
+.title_service_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+=======
 .goal_text_id {
   width: 90%;
 }
@@ -344,6 +407,7 @@ li > a {
 .section_services {
   height: 809px;
   margin: 50px;
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
 }
 
 .section_title2 {
@@ -380,10 +444,24 @@ li > a {
   display: flex;
   gap: 300px;
   height: 88px;
-  margin: 16px 16px;
-  padding: 0px 60px 0px 60px;
+  margin: 30px;
+  /* padding: 0px 60px 0px 60px; */
 }
 
+<<<<<<< HEAD
+#text_service{
+   font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 0px 60px 0px 60px;
+    margin-top: 16px;
+    text-align: center;
+    line-height: 44px;
+    /* margin-bottom: 16px; */
+}
+
+.content_service{
+=======
 #text_service {
   font-weight: 400;
   font-size: 20px;
@@ -398,27 +476,116 @@ li > a {
 .content_service {
   height: 708px;
   margin: 0px 12px 0px 12px;
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
+  height: 100%;
+
 }
 
+<<<<<<< HEAD
+.iamge_service{
+
+  width: 50%;
+}
+
+.cards_div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* height: 708px; */
+  height: 100%;
+=======
 .cards {
   height: 708px;
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
   width: 50%;
   padding: 0px 12px 0px 12px;
 }
 
+<<<<<<< HEAD
+.cards{
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 0px 12px #D2D5D57A;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 16px;
+      width: 100%;
+}
+
+.cards:hover {
+  background-color: #eaebf0;
+  scale: 1.05;
+}
+
+.iconss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    padding: 12px;
+    border-radius: 16px;
+    width: 112px;
+    height: 85px;
+
+}
+
+.textt{
+   font-size: 20px;
+    color: var(--text-color);
+    font-weight: 500px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+@media (max-width :400px){
+
+  .goal_photo{
+  display: none;
+}
+.goal_text{
+  display: flex;
+  justify-content: center;
+=======
 .card1 {
   background-color: var(--tertiary-color);
   display: flex;
   box-shadow: 0px 0px 12px #d2d5d57a;
   border-radius: 16px;
   padding: 20px;
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
   align-items: center;
-  margin-top: 16px;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0%;
+}
+
+.iamge_service{
+  display: none;
+}
+
+.description_service{
+  display: flex;
+  padding: 0%;
+  }
+
+#text_service{
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0%
+}
+.cards_div{
   width: 100%;
 }
+<<<<<<< HEAD
+.content_service{
+  margin-top: 90px;
+}
+}
+=======
 
 .icon1 {
   background-color: #d6d59c;
@@ -513,3 +680,4 @@ li > a {
 }
 
 /* End media query */
+>>>>>>> a3f5310fbab9dc59825482f6661b1e7e027c9d1c
