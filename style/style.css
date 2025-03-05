@@ -445,7 +445,7 @@ nav li a {
   transition: all 0.3s;
   &:hover {
     color: var(--primary-color);
-    padding: 6px;
+    padding-left: 6px;
   }
 }
 
