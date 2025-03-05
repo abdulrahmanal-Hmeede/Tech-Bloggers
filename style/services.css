@@ -1,87 +1,8 @@
-:root {
-  --primary-color: #40457d;
-  --secondary-color: #777a99;
-  --tertiary-color: #f5efe7;
-  --text-color: #231f20;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-::selection {
-  background-color: #40457d;
-  color: #f5efe7;
-}
-
-/* ? --- Font --- */
-@font-face {
-  font-family: Bahji;
-  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
-    format("truetype");
-}
-
-/* --- Header --- */
-/* Nav Bar */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  /* margin-bottom: 50px; */
-}
-nav {
-  padding: 20px 0;
-  background-color: var(--tertiary-color);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-/* List */
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-nav ul li {
-  margin-right: 45px;
-}
-/* Images */
-nav .logo-nav {
-  width: 55px;
-  height: 45px;
-}
-nav .icon-pages {
-  width: 30px;
-  height: 32px;
-}
-/* Nav Links */
-nav a {
-  color: var(--text-color);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s;
-  &:hover {
-    text-decoration: underline #40457d;
-    background-color: #777a99;
-    padding: 4px 10px;
-    border-radius: 5px;
-  }
-}
-
-/* ? --- Body --- */
-body {
-  font-family: Bahji, Arial, Helvetica, sans-serif;
-  background-image: url("../Images/background.png");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .content-services {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px 0;
 }
 
 .hr-services {
@@ -94,7 +15,7 @@ body {
 .cards-services {
   display: grid;
   gap: 50px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .card-services {
@@ -103,6 +24,7 @@ body {
   align-items: center;
   width: 300px;
   height: 350px;
+  margin: 0 40px;
   border-radius: 5px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   background: rgb(126, 129, 173);
@@ -163,6 +85,99 @@ a {
 @media (min-width: 480px) {
   .cards-services {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =============================== */
+/* header and media and footer */
+/* =============================== */
+
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h2 {
+  font-size: 50px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  /* لون أبيض مع شفافية */
+}
+
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nav Bar */
+nav {
+  padding: 10px 30px;
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* List */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 45px;
+}
+
+/* Images */
+nav .logo-nav {
+  width: 55px;
+  height: 45px;
+}
+
+/* Nav Links */
+nav li a {
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--primary-color);
+    padding: 6px;
   }
 }
 

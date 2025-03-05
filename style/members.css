@@ -518,6 +518,99 @@ body {
   }
 }
 
+/* =============================== */
+/* header and media and footer */
+/* =============================== */
+
+:root {
+  --primary-color: #40457d;
+  --secondary-color: #777a99;
+  --tertiary-color: #f5efe7;
+  --text-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+::selection {
+  background-color: #40457d;
+  color: #f5efe7;
+}
+
+/* ? --- Font --- */
+@font-face {
+  font-family: Bahji;
+  src: url("/Font/Bahij\ The\ Sans\ Arabic\ Semi\ Light\ -\ [UrduFonts.com].ttf")
+    format("truetype");
+}
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  /* لون أبيض مع شفافية */
+}
+
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nav Bar */
+nav {
+  padding: 10px 30px;
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* List */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 45px;
+}
+
+/* Images */
+nav .logo-nav {
+  width: 55px;
+  height: 45px;
+}
+
+/* Nav Links */
+nav li a {
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--primary-color);
+    padding: 6px;
+  }
+}
+
 /* start footer section */
 
 footer {
@@ -600,3 +693,20 @@ li > a {
 }
 
 /* end footer section */
+
+/* Start media query */
+
+@media (min-width: 768px) {
+  .content-footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+  }
+
+  .cards-how-we-help {
+    height: 350px;
+    flex-direction: row;
+  }
+}
+
+/* End media query */

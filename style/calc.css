@@ -1,3 +1,7 @@
+/* =============================== */
+/* header and media and footer */
+/* =============================== */
+
 :root {
   --primary-color: #40457d;
   --secondary-color: #777a99;
@@ -9,6 +13,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+section {
+  margin: 30px 0;
 }
 
 ::selection {
@@ -29,79 +41,54 @@ body {
   background-image: url("../Images/background.png");
   background-size: cover;
   background-attachment: fixed;
+  /* لون أبيض مع شفافية */
 }
 
-.container {
-  width: 88%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: var(--primary-color);
-  box-shadow: 0 0 10px 0px var(--text-color);
-  margin-top: 50px;
-  border-radius: 8px;
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-h1 {
-  text-align: center;
-  color: var(--tertiary-color);
-}
-
-span {
-  font-size: 25px;
-  color: var(--tertiary-color);
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  font-size: 16px;
-  color: var(--tertiary-color);
-}
-
-input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
+/* Nav Bar */
+nav {
+  padding: 10px 30px;
   background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* List */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 45px;
+}
+
+/* Images */
+nav .logo-nav {
+  width: 55px;
+  height: 45px;
+}
+
+/* Nav Links */
+nav li a {
   color: var(--text-color);
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   font-weight: 700;
-  transition: all 0.3s ease;
-  margin: 20px 0;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-}
-
-.result {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  border: 1px solid var(--tertiary-color);
-  text-align: center;
+  text-decoration: none;
   font-size: 18px;
-  border-radius: 6px;
-}
-
-#gradesList p,
-h3 {
-  color: var(--tertiary-color);
+  transition: all 0.3s;
+  &:hover {
+    color: var(--primary-color);
+    padding: 6px;
+  }
 }
 
 /* start footer section */
@@ -186,3 +173,101 @@ li > a {
 }
 
 /* end footer section */
+
+/* Start media query */
+
+@media (min-width: 768px) {
+  .content-footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+  }
+
+  .cards-how-we-help {
+    height: 350px;
+    flex-direction: row;
+  }
+}
+
+/* End media query */
+
+/* ? --- Body --- */
+body {
+  font-family: Bahji, Arial, Helvetica, sans-serif;
+  background-image: url("../Images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 88%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px 0px var(--text-color);
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+span {
+  font-size: 25px;
+  color: var(--tertiary-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: var(--tertiary-color);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#gradesList p,
+h3 {
+  color: var(--tertiary-color);
+}
